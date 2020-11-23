@@ -15,7 +15,9 @@ print(y)
 z = {item: item * item for item in x}
 print(z)
 
-# Generator expressions
+# Generator expressions:
+# The advantage of using a generator expression is that the entire list isn’t generated in 
+# memory, so arbitrarily large sequences can be generated with little memory overhead.
 g = (item * item for item in x)
 for item in g:
     print(item)
